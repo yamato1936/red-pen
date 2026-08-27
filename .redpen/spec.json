@@ -1,0 +1,353 @@
+{
+  "title": "Ball falls into water, creating ripples while a character follows the mouse",
+  "summary": "A sparse hand-drawn interactive scene concept on lined paper. A ball sits high near the upper-left with a note indicating it drops slowly. A smiling character on the left is annotated to chase the mouse. Near the bottom-left is a horizontal water surface labeled WATER, with a note explaining that when the ball enters the water, ripples spread. In red, a central motion diagram reinforces the sequence: BALL falls downward into WATER, producing ripple waves to the right.",
+  "objects": [
+    {
+      "id": "ball_top_left",
+      "type": "ball",
+      "label": "BALL",
+      "description": "Small outlined circle near the upper-left area with the handwritten label 'BALL' beneath it.",
+      "x": 0.225,
+      "y": 0.135,
+      "width": 0.03,
+      "height": 0.03,
+      "styleHints": [
+        "simple pencil outline",
+        "small circle",
+        "handwritten label below"
+      ]
+    },
+    {
+      "id": "ball_fall_note",
+      "type": "annotation",
+      "label": "『ゆっくり落ちる』",
+      "description": "Japanese note under a downward arrow from the ball, meaning 'falls slowly'.",
+      "x": 0.24,
+      "y": 0.305,
+      "width": 0.12,
+      "height": 0.05,
+      "styleHints": [
+        "pencil handwriting",
+        "quoted note",
+        "instructional annotation"
+      ]
+    },
+    {
+      "id": "ball_fall_arrow",
+      "type": "arrow",
+      "label": "downward arrow",
+      "description": "A short arrow pointing downward from the upper-left ball toward the note about falling slowly.",
+      "x": 0.22,
+      "y": 0.25,
+      "width": 0.02,
+      "height": 0.05,
+      "styleHints": [
+        "pencil arrow",
+        "indicates motion downward"
+      ]
+    },
+    {
+      "id": "character_face",
+      "type": "character",
+      "label": "CHARACTER",
+      "description": "Simple smiling round face with eyes and mouth, placed left of center.",
+      "x": 0.145,
+      "y": 0.455,
+      "width": 0.06,
+      "height": 0.07,
+      "styleHints": [
+        "cute doodle face",
+        "pencil outline",
+        "friendly expression"
+      ]
+    },
+    {
+      "id": "character_label",
+      "type": "annotation",
+      "label": "CHARACTER",
+      "description": "Handwritten English label beneath the face.",
+      "x": 0.155,
+      "y": 0.515,
+      "width": 0.11,
+      "height": 0.035,
+      "styleHints": [
+        "uppercase pencil text"
+      ]
+    },
+    {
+      "id": "character_note",
+      "type": "annotation",
+      "label": "『マウスを追いかける』",
+      "description": "Japanese note under the character, meaning 'chases the mouse'.",
+      "x": 0.165,
+      "y": 0.56,
+      "width": 0.16,
+      "height": 0.045,
+      "styleHints": [
+        "pencil handwriting",
+        "quoted note",
+        "behavior note"
+      ]
+    },
+    {
+      "id": "water_line",
+      "type": "water",
+      "label": "WATER",
+      "description": "Long horizontal line near the lower-left representing the water surface, with 'WATER' written beneath it.",
+      "x": 0.22,
+      "y": 0.705,
+      "width": 0.28,
+      "height": 0.015,
+      "styleHints": [
+        "single straight pencil line",
+        "minimal surface depiction"
+      ]
+    },
+    {
+      "id": "water_label",
+      "type": "annotation",
+      "label": "WATER",
+      "description": "Handwritten label centered below the horizontal water line.",
+      "x": 0.19,
+      "y": 0.74,
+      "width": 0.12,
+      "height": 0.04,
+      "styleHints": [
+        "uppercase pencil text"
+      ]
+    },
+    {
+      "id": "water_note",
+      "type": "annotation",
+      "label": "『BALLが水に入ったら 波紋が広がる』",
+      "description": "Japanese note below the water explaining that when the ball enters the water, ripples spread.",
+      "x": 0.16,
+      "y": 0.825,
+      "width": 0.22,
+      "height": 0.08,
+      "styleHints": [
+        "pencil handwriting",
+        "two-line note",
+        "behavior explanation"
+      ]
+    },
+    {
+      "id": "sequence_ball_text",
+      "type": "annotation",
+      "label": "BALL",
+      "description": "Red handwritten 'BALL' in the central-right area, part of a causal sequence diagram.",
+      "x": 0.47,
+      "y": 0.385,
+      "width": 0.08,
+      "height": 0.05,
+      "styleHints": [
+        "red ink",
+        "uppercase text",
+        "diagrammatic"
+      ]
+    },
+    {
+      "id": "sequence_down_arrows",
+      "type": "arrow",
+      "label": "fall sequence arrows",
+      "description": "Three stacked red downward arrows showing the ball falling toward water.",
+      "x": 0.49,
+      "y": 0.455,
+      "width": 0.03,
+      "height": 0.14,
+      "styleHints": [
+        "red ink",
+        "repeated arrows",
+        "motion emphasis"
+      ]
+    },
+    {
+      "id": "sequence_water_text",
+      "type": "annotation",
+      "label": "WATER",
+      "description": "Red handwritten 'WATER' beneath the falling arrows.",
+      "x": 0.46,
+      "y": 0.61,
+      "width": 0.1,
+      "height": 0.05,
+      "styleHints": [
+        "red ink",
+        "uppercase text",
+        "diagrammatic"
+      ]
+    },
+    {
+      "id": "sequence_right_arrow",
+      "type": "arrow",
+      "label": "rightward arrow",
+      "description": "Red arrow pointing from WATER toward the ripple marks.",
+      "x": 0.58,
+      "y": 0.625,
+      "width": 0.05,
+      "height": 0.02,
+      "styleHints": [
+        "red ink",
+        "causal arrow"
+      ]
+    },
+    {
+      "id": "ripple_marks",
+      "type": "effect",
+      "label": "ripple",
+      "description": "Series of repeated curved marks to the right of the water in red, indicating expanding ripples/waves.",
+      "x": 0.68,
+      "y": 0.61,
+      "width": 0.12,
+      "height": 0.05,
+      "styleHints": [
+        "red ink",
+        "repeated parenthesis-like wave marks",
+        "spreading effect"
+      ]
+    },
+    {
+      "id": "ripple_label",
+      "type": "annotation",
+      "label": "ripple",
+      "description": "Red handwritten label beneath the ripple marks.",
+      "x": 0.69,
+      "y": 0.66,
+      "width": 0.07,
+      "height": 0.03,
+      "styleHints": [
+        "red ink",
+        "lowercase label"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "ball_top_left",
+      "to": "ball_fall_arrow",
+      "type": "motion-indicator",
+      "description": "The ball is intended to move downward."
+    },
+    {
+      "from": "ball_fall_arrow",
+      "to": "ball_fall_note",
+      "type": "annotation-link",
+      "description": "The arrow accompanies the note that the ball falls slowly."
+    },
+    {
+      "from": "character_face",
+      "to": "character_label",
+      "type": "label",
+      "description": "The label names the smiling face as the character."
+    },
+    {
+      "from": "character_face",
+      "to": "character_note",
+      "type": "annotation-link",
+      "description": "The note describes the character's behavior."
+    },
+    {
+      "from": "water_line",
+      "to": "water_label",
+      "type": "label",
+      "description": "The text identifies the horizontal line as water."
+    },
+    {
+      "from": "water_line",
+      "to": "water_note",
+      "type": "annotation-link",
+      "description": "The note explains what happens when the ball enters the water."
+    },
+    {
+      "from": "sequence_ball_text",
+      "to": "sequence_down_arrows",
+      "type": "motion-indicator",
+      "description": "The red sequence shows the ball falling downward."
+    },
+    {
+      "from": "sequence_down_arrows",
+      "to": "sequence_water_text",
+      "type": "causal-flow",
+      "description": "The falling ball reaches the water."
+    },
+    {
+      "from": "sequence_water_text",
+      "to": "sequence_right_arrow",
+      "type": "causal-flow",
+      "description": "Water leads to the next depicted effect."
+    },
+    {
+      "from": "sequence_right_arrow",
+      "to": "ripple_marks",
+      "type": "causal-flow",
+      "description": "The arrow points to the resulting ripple effect."
+    },
+    {
+      "from": "ripple_marks",
+      "to": "ripple_label",
+      "type": "label",
+      "description": "The text names the wave marks as ripples."
+    },
+    {
+      "from": "ball_top_left",
+      "to": "water_line",
+      "type": "intended-interaction",
+      "description": "The ball is intended to eventually fall into the water."
+    },
+    {
+      "from": "ball_top_left",
+      "to": "ripple_marks",
+      "type": "causes",
+      "description": "The ball entering the water causes ripples to spread."
+    },
+    {
+      "from": "character_face",
+      "to": "ball_top_left",
+      "type": "co-present",
+      "description": "The character and ball appear in the same scene, though no direct drawn link connects them."
+    }
+  ],
+  "interactions": [
+    {
+      "trigger": "time/start",
+      "source": "ball_top_left",
+      "target": "water_line",
+      "action": "fall downward slowly",
+      "description": "The ball gradually descends toward the water."
+    },
+    {
+      "trigger": "ball enters water",
+      "source": "ball_top_left",
+      "target": "ripple_marks",
+      "action": "create expanding ripples",
+      "description": "When the ball hits or enters the water, ripple waves spread outward."
+    },
+    {
+      "trigger": "mouse movement",
+      "source": "mouse",
+      "target": "character_face",
+      "action": "character follows cursor",
+      "description": "The character is intended to chase the mouse pointer."
+    }
+  ],
+  "style": {
+    "mood": "playful, minimal, sketch-like, exploratory",
+    "palette": [
+      "pencil gray",
+      "red ink",
+      "white paper",
+      "faint blue ruled lines"
+    ],
+    "notes": [
+      "Composition is sparse with large empty space.",
+      "Objects are separated like idea notes rather than a polished layout.",
+      "Red ink is used as an explanatory motion/effect diagram distinct from the pencil scene.",
+      "The hand-drawn asymmetry and notebook-paper context feel important to the concept."
+    ]
+  },
+  "ambiguities": [
+    "It is unclear whether the red BALL/WATER/ripple diagram is a separate explanatory inset or part of the same main scene.",
+    "The exact starting position and path of the ball relative to the water surface are conceptual rather than precisely drawn.",
+    "The character's role beyond following the mouse is unspecified; it may be decorative, reactive, or playable.",
+    "Ripple direction is described as spreading, but the red example emphasizes rightward progression rather than symmetric circles."
+  ]
+}
